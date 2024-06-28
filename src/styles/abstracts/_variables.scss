@@ -1,0 +1,29 @@
+@use "sass:color";
+//$color-primary: #000000!default;
+$color-black : #000000!default;
+$color-white : #ffffff!default;
+
+$color-secondary: #4caf50 !default;
+$color-blue: #1e90ff !default;
+
+/** 1200px oder höher */
+$breakpoint-lg: 75em !default;
+/** 1024px oder höher*/
+$breakpoint-md: 64em !default;
+/** 768px oder höher */
+$breakpoint-sm: 48em !default;
+/** ~500px oder höher */
+$breakpoint-xs: 31em !default;
+
+/** Breakpoints */
+@media (min-width: $breakpoint-lg) {
+}
+
+@media (min-width: $breakpoint-md) {
+}
+
+@media (min-width: $breakpoint-sm) {
+}
+
+@media (min-width: $breakpoint-xs) {
+}
