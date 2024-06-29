@@ -21,7 +21,7 @@ const ParticlesComponent = (props) => {
   const options = useMemo(() => ({
     background: {
       color: {
-        value: theme === 'dark' ? "#000000" : "#ffffff",
+        value: theme === 'light' ? "#000000" : "#ffffff",
       },
     },
     fpsLimit: 120,
@@ -89,7 +89,7 @@ const ParticlesComponent = (props) => {
   return (
     <>
       <span className="dark-lightmode" onClick={toggleTheme}>
-       {theme === 'dark' ?  <IoMoon className="dark" />: <BsSun className="light" />  }
+       {theme === 'light' ?  <IoMoon className="dark" />: <BsSun className="light" />  }
       </span>
       <Particles id={props.id} init={particlesLoaded} options={options} />
     </>

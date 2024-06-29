@@ -1,53 +1,111 @@
 @use "../abstracts/" as *;
 
-ul{
-   display: flex;
-    justify-content: end;
-    margin-right: 5rem;
-    padding-top: 0.3rem;
+.header__hamburgerMenu {
+  position: absolute;
+  right: 5rem;
+  top: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  z-index: 2;
+  @media (min-width: $breakpoint-md) {
+    display: none;
+   
+  }
+}
+.header__nav {
+  background-color: #00cffc;
 
+
+  margin: 0 auto;
+  padding: 3rem 0;
+  animation: menu 2s ease-in-out;
+  @media (min-width: $breakpoint-md) {
+    padding: 0;
+    background-color: transparent;
+  }
+  @keyframes menu {
+    0% {
+        
+      transform: translateY(-100%);
+    }
+
+    100% {transform: translateY(0);
+      
+    }
+  }
+
+  &__ul-liste {
     align-items: center;
     list-style: none;
-    
-}
-li{
-    margin: 0 1rem;
+    padding: 0;
+
+    @media (min-width: $breakpoint-md) {
+      display: flex;
+      justify-content: end;
+      margin-right: 5rem;
+      //margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      padding-right: 0.3rem;
+    }
+  }
+
+  &__li-liste {
     font-size: 1.5rem;
     font-weight: 500;
-   
-    cursor: pointer;
-    transition: color 0.3s;
-   
+  }
 }
-a{
-    text-decoration: none;
-    color: black;
-    transition: color 0.3s;
+
+
+a {
+    
+  display: inline-block;
+  text-decoration: none;
+  color: $color-black;
+  transition: color 0.3s;
+  padding-bottom: 2rem;
+ 
+  animation: menu-text 3s ease-in-out;
+
+ 
+  @keyframes menu-text {
+    0% {
+        rotate: 45deg;
+      transform: translateY(-600%);
+    }
+
+    100% {
+        rotate: 0deg;
+        transform: translateY(0);
+      
+    }}
+
+  @media (min-width: $breakpoint-md) {
+    display: initial;
+    padding: 0;
+    margin: 1rem;
+   
+  }
 }
 .theme-light {
-   
-    color: #000;
+  color: $color-white;
 
-    a {
-        color: #000;
-    }
+  a {
+    color: $color-white;
+  }
 
-    .active {
-        color: #007bff;
-    }
+  .active {
+    color: #1e90ff;
+  }
 }
 
 .theme-dark {
-   
-    color: #fff;
+  color: $color-black;
 
-    a {
-        color: #fff;
-    }
+  a {
+    color: $color-black;
+  }
 
-    .active {
-        color: #1e90ff;
-    }
+  .active {
+    color: #007bff;
+  }
 }
-
-
