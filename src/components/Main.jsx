@@ -26,6 +26,7 @@ function Main() {
           <button>Contact</button><button>Project</button>
         </div>
       </div>
+      
     </main>
   )
 }

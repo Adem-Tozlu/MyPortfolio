@@ -146,7 +146,12 @@ font-size: 1.5rem;
 
 .theme-dark {
   color: $color-black;
-
+  .home__name_text{
+    text-shadow: 0 0 3px rgba(52, 60, 77, 0.5);
+    &--2 {
+      text-shadow: 0 0 3px rgba(52, 60, 77, 0.5);
+    }
+  }
   a {
     color: $color-black;
   }
