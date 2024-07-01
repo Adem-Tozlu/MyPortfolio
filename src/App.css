@@ -29,26 +29,10 @@ body {
   position: absolute;
 }
 
-.light{
-  color: black;
-  width: 2rem;
-  height: 2rem;
-}
-.dark{
-  
-  color:rgb(255, 255, 255);
-  width: 2rem;
-  height: 2rem;
-  
-}
-.dark-lightmode{
-  position: absolute;
-  right: 2rem;
-  top: 1.5rem;
-  z-index: 1;
 
-}
-img{
-  width: 20rem;
-  height: auto;
-}
+
+  /* img{
+    width: 35rem;
+    height: auto;
+  } */
+

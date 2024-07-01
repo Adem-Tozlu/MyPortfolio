@@ -1,5 +1,29 @@
+@use "../abstracts/" as *;
+
 :root {
     --color-blue: #{$color-blue};
   }
 
   
+  .dark-lightmode{
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    z-index: 99;
+  
+  }
+  
+  .light{
+   
+    color: black;
+    width: 2rem;
+    height: 2rem;
+  }
+  .dark{
+   
+    color:rgb(255, 255, 255);
+    width: 2rem;
+    height: 2rem;
+  }
+
+

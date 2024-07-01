@@ -6,6 +6,8 @@ import { MdOutlineMail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
+import { TbFileCv } from "react-icons/tb";
+
 
 function Header() {
 
@@ -66,7 +68,7 @@ const [menuLinks, setMenuLinks] = useState(true)
    { menuLinks? <div className='header__nav__links'>
     <IoLogoLinkedin className='header__nav__links--button' />
     <FaGithub className='header__nav__links--button' />
-    <FaWhatsapp className='header__nav__links--button' />
+    <TbFileCv className='header__nav__links--button' />
     <MdOutlineMail className='header__nav__links--button' /></div> :""}
 </nav>:""}</header>
 

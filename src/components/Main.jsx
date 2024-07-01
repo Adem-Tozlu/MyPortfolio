@@ -23,9 +23,17 @@ function Main() {
         <div className='home__name'>
           <span>Hello <span>👋🏾</span>, I'm <span className='home__name_text'>Adem</span></span>
           <span className='home__name_text--1'>I'm a <span className="home__name_text--2">{text}</span></span>
-          <button>Contact</button><button>Project</button>
+        <div className='home__button-container'><button className='home__button'>Download CV</button><button className='home__button'>Project</button></div>  
         </div>
+        
+
       </div>
+{/* -------------------About------------------- */}
+
+      <div className='about'>
+<h1>About</h1>
+      </div>
+      {/* <img src="/public/images/bild.png" alt="" /> */}
       
     </main>
   )
