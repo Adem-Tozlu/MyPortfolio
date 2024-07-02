@@ -101,7 +101,16 @@ function Main() {
             alt=""
           />
         </div>
+
       </div>
+      <div className="project">
+        <h2>Project</h2>
+        
+        <div className="project__container"></div>
+        
+      </div>
+
+
     </main>
   );
 }

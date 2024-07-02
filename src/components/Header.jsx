@@ -15,11 +15,14 @@ function Header() {
        
         const resize = () => {
           if (window.innerWidth < 1023) {
-            setMenu(true);
-            setMenuLinks(true)
-          } else {
             setMenu(false);
+            setMenuLinks(true)
+            setNav(false)
+
+          } else {
+            setMenu(true);
             setMenuLinks(false)
+            setNav(true)
           }
         };
         window.addEventListener('resize', resize);
@@ -33,34 +36,35 @@ function Header() {
 const [menuLinks, setMenuLinks] = useState(true)
       const [menu, setMenu] = useState(false)
       const { theme } = useTheme(); 
-      const  closeMenu = () => { setMenu(false) }
+      const [nav, setNav] = useState(true)
+      const  closeMenu = () => { setMenu(nav) }
   return (
     <header className= {`theme-${theme}`}>
         <RxHamburgerMenu onClick={()=>setMenu(!menu)} className='header__hamburgerMenu'  />
-{!menu?<nav className='header__nav'>
+{menu? <nav className='header__nav'>
     <ul className='header__nav__ul-liste'>
         <li className='header__nav__li-liste'>
-        <NavLink onClick={()=>setMenu(!menu)} to="/" exact activeClassName="active" className="header__nav__text">
+        <NavLink onClick={()=>setMenu(closeMenu)} to="/" exact activeClassName="active" className="header__nav__text">
             Home
         </NavLink>
         </li>
         <li className='header__nav__li-liste'>
-        <NavLink onClick={()=>setMenu(!menu)} to="/about" activeClassName="active" className="header__nav__text" >
+        <NavLink onClick={()=>setMenu(closeMenu)} to="/about" activeClassName="active" className="header__nav__text" >
             About
         </NavLink>
         </li>
         <li className='header__nav__li-liste'>
-        <NavLink onClick={()=>setMenu(!menu)} to="/skills" activeClassName="active" className="header__nav__text">
+        <NavLink onClick={()=>setMenu(closeMenu)} to="/skills" activeClassName="active" className="header__nav__text">
             Skills
         </NavLink>
         </li>
         <li className='header__nav__li-liste'>
-        <NavLink onClick={()=>setMenu(!menu)} to="/projects" activeClassName="active" className="header__nav__text">
+        <NavLink onClick={()=>setMenu(closeMenu)} to="/projects" activeClassName="active" className="header__nav__text">
             Projects
         </NavLink>
         </li>
         <li className='header__nav__li-liste'>
-        <NavLink onClick={()=>setMenu(!menu)} to="/contact" activeClassName="active" className="header__nav__text">
+        <NavLink onClick={()=>setMenu(closeMenu)} to="/contact" activeClassName="active" className="header__nav__text">
             Contact
         </NavLink>
         </li>
