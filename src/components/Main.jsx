@@ -74,7 +74,9 @@ function Main() {
               potential and collaborate with you to realize great projects.
             </article>
             <div className="about__fullstack-container">
-              <h3 className="about__fullstack-container-text">Full Stack Development</h3>
+              <h3 className="about__fullstack-container-text">
+                Full Stack Development
+              </h3>
               <p>
                 ⚡ Building responsive designs: Proficient in CSS and SCSS for
                 creating responsive user interfaces.
@@ -101,16 +103,12 @@ function Main() {
             alt=""
           />
         </div>
-
       </div>
       <div className="project">
         <h2>Project</h2>
-        
+
         <div className="project__container"></div>
-        
       </div>
-
-
     </main>
   );
 }
