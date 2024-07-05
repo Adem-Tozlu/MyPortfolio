@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "./Theme/ThemeContext";
+import { TbWorld } from "react-icons/tb";
+import { FaGithub } from "react-icons/fa6";
+
+
 
 function Main() {
   const [text, setText] = useState("Fullstack Developer"); // Initialer Zustand als String
@@ -108,36 +112,50 @@ function Main() {
         <h2>Project</h2>
 
         <div className="project__container">
-          <section className="project-container1">
+          <section className="project__container-1">
           <img
             className="project__image"
             src="/public/images/hotel1.png"
             alt=""
           />
-         <h3>Hotel Resort</h3>
-          <article>This web application is designed to provide users with detailed information about hotel rooms and services. Users can explore different room types, features, and prices, as well as learn about the amenities offered by the hotel.</article>
-         <div className="project__button-container"><button className="project__button">Visit website</button><button className="project__button">Source Code</button></div> 
+         <h3 className="project__title">Hotel Resort</h3>
+         <div className="project__text-container">           <article className="project__text">This web application is designed to provide users with detailed information about hotel rooms and services. Users can explore different room types, features, and prices, as well as learn about the amenities offered by the hotel.</article>
+         </div>
+         <div className="project__button-container"><FaGithub /><TbWorld />
+         </div> 
           </section>
-          <section className="project-container2">
+          <section className="project__container-2">
           <img
             className="project__image"
             src="/public/images/shop.png"
             alt=""
           />
+           <h3 className="project__title">Hotel Resort</h3>
+           <div className="project__text-container">           <article className="project__text">This web application is designed to provide users with detailed information about hotel rooms and services. Users can explore different room types, features, and prices, as well as learn about the amenities offered by the hotel.</article>
+           </div>         <div className="project__button-container"><FaGithub /><TbWorld />
+           </div> 
           </section>
-          <section className="project-container3">
+          <section className="project__container-3">
           <img
             className="project__image"
             src="/public/images/pokemon.png"
             alt=""
           />
+           <h3  className="project__title">Hotel Resort</h3>
+           <div className="project__text-container">           <article className="project__text">This web application is designed to provide users with detailed information about hotel rooms and services. Users can explore different room types, features, and prices, as well as learn about the amenities offered by the hotel.</article>
+           </div>          <div className="project__button-container"><FaGithub /><TbWorld />
+           </div> 
           </section>
-          <section className="project-container4">
+          <section className="project__container-4">
           <img
             className="project__image"
             src="/public/images/crypto.png"
             alt=""
           />
+           <h3  className="project__title">Hotel Resort</h3>
+           <div className="project__text-container">           <article className="project__text">This web application is designed to provide users with detailed information about hotel rooms and services. Users can explore different room types, features, and prices, as well as learn about the amenities offered by the hotel.</article>
+           </div>         <div className="project__button-container"><FaGithub /><TbWorld />
+           </div> 
           </section>
         </div>
       </div>
