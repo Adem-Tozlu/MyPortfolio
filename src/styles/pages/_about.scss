@@ -30,13 +30,6 @@ font-size: 1.1rem;
         align-items: center;
     
         @media (min-width: $breakpoint-md) {
-        //   backdrop-filter: blur(5px); 
-       //background-color: rgba(255, 255, 255, 0); 
-      
-        
-           
-
-
  flex-direction: row;
           }
         
@@ -65,9 +58,13 @@ border-radius: 50%;
 
     }
     &__whatido{
+      @include headline();
         margin:1rem 0;
+        
     }
     &__text{
+        background-color: rgba(255, 246, 246, 0);
+       backdrop-filter: blur(5px);
         hyphens: auto; 
 	text-align: justify
 

@@ -1,0 +1,19 @@
+@use "../abstracts/" as *;
+
+footer {
+    padding: 15px;
+    margin-top: 5rem;
+    text-align: center;
+    background-color: grey;
+  }
+
+  .footer {
+    gap: 5rem;
+    padding: 5vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  i {
+    font-size: 2rem;
+  }

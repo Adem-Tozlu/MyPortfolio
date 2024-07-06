@@ -5,6 +5,7 @@ import Header from './components/Header';
 import { ThemeProvider } from './components/Theme/ThemeContext';
 import ParticlesComponent from './components/ParticlesBackground';
 import Main from './components/Main';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -13,11 +14,7 @@ function App() {
       <ParticlesComponent id="particles" />
       <Header />
       < Main/>
-     
-
-      
-      
-    {/*<img src="../public/images/AdemTozlu.png" alt="" />*/}
+      <Footer/>
       </ThemeProvider>
     </div>
   );

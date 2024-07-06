@@ -108,56 +108,120 @@ function Main() {
           />
         </div>
       </div>
+
+      {/* -------------------Project------------------- */}
+
+
       <div className="project">
         <h2>Project</h2>
 
-        <div className="project__container">
+        <div className={`project__container theme-${theme}`}>
           <section className="project__container-1">
-          <img
-            className="project__image"
-            src="/public/images/hotel1.png"
-            alt=""
-          />
-         <h3 className="project__title">Hotel Resort</h3>
-         <div className="project__text-container">           <article className="project__text">This web application is designed to provide users with detailed information about hotel rooms and services. Users can explore different room types, features, and prices, as well as learn about the amenities offered by the hotel.</article>
-         </div>
-         <div className="project__button-container"><FaGithub /><TbWorld />
-         </div> 
+            <a href="https://hotel-resort-project.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <img
+                className="project__image"
+                src="/public/images/hotel1.png"
+                alt=""
+              />
+            </a>
+            <h3 className="project__title">Hotel Resort</h3>
+            <div className="project__text-container">          
+               <article className="project__text">This web application is designed to provide users with detailed information about hotel rooms and services. Users can explore different room types, features, and prices, as well as learn about the amenities offered by the hotel.</article>
+            </div>
+            <div className="project__button-container">  
+               <a href="https://github.com/Adem-Tozlu/Hotel-Resort-Project" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="project__button-icon" /></a>
+              <a href="https://hotel-resort-project.vercel.app/" target="_blank" rel="noopener noreferrer" ><TbWorld className="project__button-icon" /></a>
+            </div>
           </section>
-          <section className="project__container-2">
-          <img
-            className="project__image"
-            src="/public/images/shop.png"
-            alt=""
-          />
-           <h3 className="project__title">Hotel Resort</h3>
-           <div className="project__text-container">           <article className="project__text">This web application is designed to provide users with detailed information about hotel rooms and services. Users can explore different room types, features, and prices, as well as learn about the amenities offered by the hotel.</article>
-           </div>         <div className="project__button-container"><FaGithub /><TbWorld />
-           </div> 
+          <section className="project__container-2 ">
+            <a href="https://project-shop-xi.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <img
+                className="project__image"
+                src="/public/images/shop.png"
+                alt=""
+              />
+            </a>
+            <h3 className="project__title">Phone Shop</h3>
+            <div className="project__text-container">
+              <article className="project__text">
+              This is a shop that is implemented as a Single-Page Application (SPA) using React and various hooks such as useState, useEffect, useNavigate, and useContext.</article>
+            </div>
+            <div className="project__button-container">
+              <a href="https://github.com/Adem-Tozlu/Project-Shop" target="_blank" rel="noopener noreferrer">
+                <FaGithub className="project__button-icon" /></a>
+              <a href="https://project-shop-xi.vercel.app/" target="_blank" rel="noopener noreferrer"><TbWorld className="project__button-icon" /></a>
+            </div>
           </section>
           <section className="project__container-3">
-          <img
-            className="project__image"
-            src="/public/images/pokemon.png"
-            alt=""
-          />
-           <h3  className="project__title">Hotel Resort</h3>
-           <div className="project__text-container">           <article className="project__text">This web application is designed to provide users with detailed information about hotel rooms and services. Users can explore different room types, features, and prices, as well as learn about the amenities offered by the hotel.</article>
-           </div>          <div className="project__button-container"><FaGithub /><TbWorld />
-           </div> 
+            <a href="https://pokemon-cards-delta.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <img
+                className="project__image"
+                src="/public/images/pokemon.png"
+                alt=""
+              />
+            </a>
+            <h3 className="project__title">Pokemon Card</h3>
+            <div className="project__text-container">
+              <article className="project__text">As part of the "Pokemon Cards" project, a Pokemon card was successfully displayed using data from the Pokemon API. In addition to displaying the card data, the sound of the respective Pokemon was also integrated to make the experience even more interactive and immersive.</article>
+            </div>
+            <div className="project__button-container">
+            <a href="https://github.com/Adem-Tozlu/Pokemon-Cards" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="project__button-icon" /></a>
+              <a href="https://pokemon-cards-delta.vercel.app/" target="_blank" rel="noopener noreferrer"><TbWorld className="project__button-icon" /></a>
+            </div>
           </section>
           <section className="project__container-4">
-          <img
-            className="project__image"
-            src="/public/images/crypto.png"
-            alt=""
-          />
-           <h3  className="project__title">Hotel Resort</h3>
-           <div className="project__text-container">           <article className="project__text">This web application is designed to provide users with detailed information about hotel rooms and services. Users can explore different room types, features, and prices, as well as learn about the amenities offered by the hotel.</article>
-           </div>         <div className="project__button-container"><FaGithub /><TbWorld />
-           </div> 
+            <a href="https://project-crypto-currencyconverter.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <img
+                className="project__image"
+                src="/public/images/crypto.png"
+                alt=""
+              />
+            </a>
+
+            <h3 className="project__title">Crypto</h3>
+            <div className="project__text-container">          
+               <article className="project__text">This task was about creating a currency calculator. The API from Coinbase was used. You can calculate the following currencies with this app: BTC, EOS, LTC, ETH, AUD, EUR, USD, TRY.
+
+</article>
+            </div>         <div className="project__button-container">   <a href="https://github.com/Adem-Tozlu/Project-Crypto-Currencyconverter" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="project__button-icon" /></a>
+              <a href="https://project-crypto-currencyconverter.vercel.app/" target="_blank" rel="noopener noreferrer"><TbWorld className="project__button-icon" /></a>
+            </div>
           </section>
+          
         </div>
+      </div>
+
+      {/* -------------------Contact------------------- */}
+
+      <div className="contact">
+        <h2>Contact</h2>
+        <form className="contact">
+  <div id="contact"></div>
+  <div>
+    <div className="contact1"><h2>Contact</h2></div>
+    <label htmlFor="uname"></label>
+    <input type="text" name="name" id="uname" placeholder="Name" />
+  </div>
+
+  <div>
+    <label htmlFor="email"></label>
+    <input type="email" name="email" id="email" placeholder="Email" />
+  </div>
+  <div>
+    <label htmlFor="comment"></label>
+    <textarea
+      name="comment"
+      id="comment"
+      placeholder="Ihre Nachricht"
+    ></textarea>
+  </div>
+  <div className="button1">
+    <input className="button" type="submit" value="Senden" />
+  </div>
+</form>
       </div>
     </main>
   );
