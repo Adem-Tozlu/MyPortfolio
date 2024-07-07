@@ -16,3 +16,13 @@
     color: var(--color-blue);
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
+
+@mixin skills-images (){
+    cursor: pointer;
+    width: 3rem;
+    height: auto;
+    @media (min-width: $breakpoint-md) {
+      
+      width: 4rem;
+    }
+}

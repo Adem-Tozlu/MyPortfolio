@@ -2,11 +2,14 @@ import React, { useEffect, useState } from "react";
 import { useTheme } from "./Theme/ThemeContext";
 import { TbWorld } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa6";
+import { MdOutlineMail } from "react-icons/md";
+import { IoLogoLinkedin } from "react-icons/io5";
+
 
 
 
 function Main() {
-  const [text, setText] = useState("Fullstack Developer"); // Initialer Zustand als String
+  const [text, setText] = useState("Fullstack Developer");
   const { theme } = useTheme();
 
   useEffect(() => {
@@ -39,15 +42,15 @@ function Main() {
           </span>
 
           <div className="home__skills">
-            <img src="/public/svg-images/html5.svg" alt="" />
-            <img src="/public/svg-images/css.svg" alt="" />
+            <img src="/public/svg-images/html5.svg" alt="htlm" />
+            <img src="/public/svg-images/css.svg" alt="css" />
 
-            <img src="/public/svg-images/scss.svg" alt="" />
-            <img src="/public/svg-images/bootstrap.svg" alt="" />
-            <img src="/public/svg-images/react.svg" alt="" />
-            <img src="/public/svg-images/javascript.svg" alt="" />
-            <img src="/public/svg-images/nodejs.svg" alt="" />
-            <img src="/public/svg-images/mongodb.svg" alt="" />
+            <img src="/public/svg-images/scss.svg" alt="scss" />
+            <img src="/public/svg-images/bootstrap.svg" alt="bootstrap" />
+            <img src="/public/svg-images/react.svg" alt="react" />
+            <img src="/public/svg-images/javascript.svg" alt="javascript" />
+            <img src="/public/svg-images/nodejs.svg" alt="nodejs" />
+            <img src="/public/svg-images/mongodb.svg" alt="mongodb" />
 
             <img
               src="/public/svg-images/express-js.png"
@@ -108,6 +111,48 @@ function Main() {
           />
         </div>
       </div>
+      {/* -------------------Skills------------------- */}
+
+      <h2>Skills</h2>
+      <div className="skills">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer"><img src="/public/svg-images/html5.svg" alt="html" />
+  <p className="skills__text">HTML</p></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer"><img src="/public/svg-images/css.svg" alt="css" />
+  <p className="skills__text">CSS</p>
+</a>
+
+<a href="https://sass-lang.com/documentation/" target="_blank" rel="noopener noreferrer"><img src="/public/svg-images/scss.svg" alt="scss" />
+  <p className="skills__text">SASS/SCSS</p></a>
+<a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" target="_blank" rel="noopener noreferrer">
+  <img src="/public/svg-images/bootstrap.svg" alt="bootstrap" />
+  <p className="skills__text">Bootstrap</p>
+</a>
+<a href="https://legacy.reactjs.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">
+  <img src="/public/svg-images/react.svg" alt="react" />
+  <p className="skills__text">React</p>
+</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">
+  <img src="/public/svg-images/javascript.svg" alt="javascript" />
+  <p className="skills__text">JavaScript</p>
+</a>
+<a href="https://nodejs.org/docs/latest/api/" target="_blank" rel="noopener noreferrer">
+  <img src="/public/svg-images/nodejs.svg" alt="nodejs" />
+  <p className="skills__text">Node.js</p>
+</a>
+<a href="https://www.mongodb.com/docs/" target="_blank" rel="noopener noreferrer">
+  <img src="/public/svg-images/mongodb.svg" alt="mongodb" />
+  <p className="skills__text">MongoDB</p>
+</a>
+
+<a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction" target="_blank" rel="noopener noreferrer"><img
+  src="/public/svg-images/express-js.png"
+  className="express"
+  alt="express-js"
+/>
+  <p className="skills__text">Express.js</p></a>
+      </div>
+
+
 
       {/* -------------------Project------------------- */}
 
@@ -125,12 +170,12 @@ function Main() {
               />
             </a>
             <h3 className="project__title">Hotel Resort</h3>
-            <div className="project__text-container">          
-               <article className="project__text">This web application is designed to provide users with detailed information about hotel rooms and services. Users can explore different room types, features, and prices, as well as learn about the amenities offered by the hotel.</article>
+            <div className="project__text-container">
+              <article className="project__text">This web application is designed to provide users with detailed information about hotel rooms and services. Users can explore different room types, features, and prices, as well as learn about the amenities offered by the hotel.</article>
             </div>
-            <div className="project__button-container">  
-               <a href="https://github.com/Adem-Tozlu/Hotel-Resort-Project" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="project__button-icon" /></a>
+            <div className="project__button-container">
+              <a href="https://github.com/Adem-Tozlu/Hotel-Resort-Project" target="_blank" rel="noopener noreferrer">
+                <FaGithub className="project__button-icon" /></a>
               <a href="https://hotel-resort-project.vercel.app/" target="_blank" rel="noopener noreferrer" ><TbWorld className="project__button-icon" /></a>
             </div>
           </section>
@@ -145,7 +190,7 @@ function Main() {
             <h3 className="project__title">Phone Shop</h3>
             <div className="project__text-container">
               <article className="project__text">
-              This is a shop that is implemented as a Single-Page Application (SPA) using React and various hooks such as useState, useEffect, useNavigate, and useContext.</article>
+                This is a shop that is implemented as a Single-Page Application (SPA) using React and various hooks such as useState, useEffect, useNavigate, and useContext.</article>
             </div>
             <div className="project__button-container">
               <a href="https://github.com/Adem-Tozlu/Project-Shop" target="_blank" rel="noopener noreferrer">
@@ -166,8 +211,8 @@ function Main() {
               <article className="project__text">As part of the "Pokemon Cards" project, a Pokemon card was successfully displayed using data from the Pokemon API. In addition to displaying the card data, the sound of the respective Pokemon was also integrated to make the experience even more interactive and immersive.</article>
             </div>
             <div className="project__button-container">
-            <a href="https://github.com/Adem-Tozlu/Pokemon-Cards" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="project__button-icon" /></a>
+              <a href="https://github.com/Adem-Tozlu/Pokemon-Cards" target="_blank" rel="noopener noreferrer">
+                <FaGithub className="project__button-icon" /></a>
               <a href="https://pokemon-cards-delta.vercel.app/" target="_blank" rel="noopener noreferrer"><TbWorld className="project__button-icon" /></a>
             </div>
           </section>
@@ -181,16 +226,16 @@ function Main() {
             </a>
 
             <h3 className="project__title">Crypto</h3>
-            <div className="project__text-container">          
-               <article className="project__text">This task was about creating a currency calculator. The API from Coinbase was used. You can calculate the following currencies with this app: BTC, EOS, LTC, ETH, AUD, EUR, USD, TRY.
+            <div className="project__text-container">
+              <article className="project__text">This task was about creating a currency calculator. The API from Coinbase was used. You can calculate the following currencies with this app: BTC, EOS, LTC, ETH, AUD, EUR, USD, TRY.
 
-</article>
+              </article>
             </div>         <div className="project__button-container">   <a href="https://github.com/Adem-Tozlu/Project-Crypto-Currencyconverter" target="_blank" rel="noopener noreferrer">
               <FaGithub className="project__button-icon" /></a>
               <a href="https://project-crypto-currencyconverter.vercel.app/" target="_blank" rel="noopener noreferrer"><TbWorld className="project__button-icon" /></a>
             </div>
           </section>
-          
+
         </div>
       </div>
 
@@ -198,31 +243,17 @@ function Main() {
 
       <div className="contact">
         <h2>Contact</h2>
-        <form className="contact">
-  <div id="contact"></div>
-  <div>
-    <div className="contact1"><h2>Contact</h2></div>
-    <label htmlFor="uname"></label>
-    <input type="text" name="name" id="uname" placeholder="Name" />
-  </div>
+        <div className="contact__icon-container">
+          <a href="https://github.com/Adem-Tozlu" target="_blank" rel="noopener noreferrer">
+            <FaGithub className="contact__icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/adem-tozlu-8906b52a5/" target="_blank" rel="noopener noreferrer">
+            <IoLogoLinkedin className="contact__icon" />
+          </a>
+          <a href="mailto:Adem-Tozlu@hotmail.de"><MdOutlineMail className="contact__icon" /></a>
 
-  <div>
-    <label htmlFor="email"></label>
-    <input type="email" name="email" id="email" placeholder="Email" />
-  </div>
-  <div>
-    <label htmlFor="comment"></label>
-    <textarea
-      name="comment"
-      id="comment"
-      placeholder="Ihre Nachricht"
-    ></textarea>
-  </div>
-  <div className="button1">
-    <input className="button" type="submit" value="Senden" />
-  </div>
-</form>
-      </div>
+
+        </div></div>
     </main>
   );
 }

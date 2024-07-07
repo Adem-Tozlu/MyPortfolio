@@ -1,0 +1,26 @@
+@use "../abstracts/" as *;
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem auto;
+  max-width: 80%;
+  height: auto;
+  a {
+    text-decoration: none;
+  }
+  &__text {
+    text-align: center;
+    
+    @media (min-width: $breakpoint-sm) {
+      font-size: 1.5rem;
+    }
+  }
+
+  img {
+    @include skills-images();
+  }
+}

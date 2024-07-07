@@ -1,1 +1,26 @@
 @use "../abstracts/" as *;
+
+h2 {
+  @include headline;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 5rem;
+  }
+}
+.contact__icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 3rem 0;
+  height: 100%;
+
+  @media (min-width: $breakpoint-sm) {
+    font-size: 2rem;
+  }
+  @media (min-width: $breakpoint-md) {
+    font-size: 3rem;
+  }
+}

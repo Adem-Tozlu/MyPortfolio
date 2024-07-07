@@ -72,10 +72,16 @@ function Header() {
         </li>
     </ul>
    { menuLinks? <div className='header__nav__links'>
+    <a href="https://www.linkedin.com/in/adem-tozlu-8906b52a5/">
     <IoLogoLinkedin className='header__nav__links--button' />
+    </a>
+   
+    <a href="https://github.com/Adem-Tozlu" target="_blank" rel="noopener noreferrer">
     <FaGithub className='header__nav__links--button' />
-    <TbFileCv className='header__nav__links--button' />
-    <MdOutlineMail className='header__nav__links--button' /></div> :""}
+</a>
+    <a href=""><TbFileCv className='header__nav__links--button' /></a>
+    <a href="mailto:Adem-Tozlu@hotmail.de"> <MdOutlineMail className='header__nav__links--button' /></a>
+   </div> :""}
 </nav>:""}</header>
 
 
