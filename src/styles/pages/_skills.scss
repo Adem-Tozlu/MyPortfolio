@@ -1,21 +1,40 @@
 @use "../abstracts/" as *;
-
+:root {
+  --color-blue: #{$color-blue};
+}
+h2{
+  margin-top: 8rem;
+}
 .skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin: 1rem auto;
+  margin: 2rem auto;
   max-width: 80%;
   height: auto;
+
   a {
+    transition: transform 0.3s;
     text-decoration: none;
+   
+
+    &:hover{
+      transform: scale(1.1);
+      -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: var(--color-blue);
+    }
   }
   &__text {
     text-align: center;
-    
+    //text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+}
+  
+   
     @media (min-width: $breakpoint-sm) {
+      margin: 5rem auto;
       font-size: 1.5rem;
     }
   }
@@ -23,4 +42,4 @@
   img {
     @include skills-images();
   }
-}
+

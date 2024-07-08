@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-scroll'
 import { useTheme } from './Theme/ThemeContext';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineMail } from "react-icons/md";
@@ -46,29 +46,29 @@ function Header() {
 {menu? <nav className='header__nav' >
     <ul className='header__nav__ul-liste'>
         <li className='header__nav__li-liste'>
-        <NavLink onClick={closeMenu } to="/"  className="header__nav__text">
+        <Link onClick={closeMenu } to="/"  className="header__nav__text">
             Home
-        </NavLink>
+        </Link>
         </li>
         <li className='header__nav__li-liste'>
-        <NavLink onClick={closeMenu } to="/about"  className="header__nav__text" >
+        <Link to="about" smooth={true} duration={500}  onClick={closeMenu } className="header__nav__text" >
             About
-        </NavLink>
+        </Link>
         </li>
         <li className='header__nav__li-liste'>
-        <NavLink onClick={closeMenu } to="/skills"  className="header__nav__text">
+        <Link to="skills" smooth={true} duration={500} onClick={closeMenu }  className="header__nav__text">
             Skills
-        </NavLink>
+        </Link>
         </li>
         <li className='header__nav__li-liste'>
-        <NavLink onClick={closeMenu } to="/projects" className="header__nav__text">
+        <Link to="project" smooth={true} duration={500}  onClick={closeMenu } className="header__nav__text">
             Projects
-        </NavLink>
+        </Link>
         </li>
         <li className='header__nav__li-liste'>
-        <NavLink onClick={closeMenu } to="/contact" className="header__nav__text">
+        <Link to="contact" smooth={true} duration={500}  onClick={closeMenu } className="header__nav__text">
             Contact
-        </NavLink>
+        </Link>
         </li>
     </ul>
    { menuLinks? <div className='header__nav__links'>

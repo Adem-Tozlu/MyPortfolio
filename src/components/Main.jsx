@@ -11,6 +11,11 @@ import { IoLogoLinkedin } from "react-icons/io5";
 function Main() {
   const [text, setText] = useState("Fullstack Developer");
   const { theme } = useTheme();
+  useEffect(() => {
+    
+    window.history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     const texts = [
@@ -65,7 +70,7 @@ function Main() {
         </div>
       </div>
       {/* -------------------About------------------- */}
-
+      <div id="about">
       <div className="about">
         <div className="about__container">
           <div>
@@ -110,9 +115,9 @@ function Main() {
             alt=""
           />
         </div>
-      </div>
+      </div></div>
       {/* -------------------Skills------------------- */}
-
+<div id="skills">
       <h2>Skills</h2>
       <div className="skills">
       <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer"><img src="/public/svg-images/html5.svg" alt="html" />
@@ -150,13 +155,13 @@ function Main() {
   alt="express-js"
 />
   <p className="skills__text">Express.js</p></a>
-      </div>
+      </div></div>
 
 
 
       {/* -------------------Project------------------- */}
 
-
+<div id="project">
       <div className="project">
         <h2>Project</h2>
 
@@ -237,10 +242,11 @@ function Main() {
           </section>
 
         </div>
-      </div>
+      </div></div>
 
       {/* -------------------Contact------------------- */}
 
+<div id="contact">
       <div className="contact">
         <h2>Contact</h2>
         <div className="contact__icon-container">
@@ -253,7 +259,7 @@ function Main() {
           <a href="mailto:Adem-Tozlu@hotmail.de"><MdOutlineMail className="contact__icon" /></a>
 
 
-        </div></div>
+        </div></div></div>
     </main>
   );
 }

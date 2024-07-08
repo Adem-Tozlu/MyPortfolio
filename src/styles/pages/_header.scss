@@ -64,13 +64,12 @@
   &__text {
     opacity: 1;
     position: relative;
-
+    cursor: pointer;
     display: inline-block;
     text-decoration: none;
     color: $color-black;
     transition: color 0.3s;
     margin-bottom: 2rem;
-
     animation: menu-text 3s ease-in-out;
 
     @keyframes menu-text {
@@ -102,7 +101,6 @@
           width: 100%;
           height: 3rem;
           background: var(--color-blue);
-
           transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
           filter: blur(1em);
           opacity: 0.7;
