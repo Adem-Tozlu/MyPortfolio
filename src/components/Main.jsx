@@ -4,8 +4,8 @@ import { TbWorld } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
 import { IoLogoLinkedin } from "react-icons/io5";
-
-
+import { Link } from "react-scroll";
+import Resume from "/public/CV/Adem-Tozlu-CV.pdf";
 
 
 function Main() {
@@ -60,12 +60,13 @@ function Main() {
             <img
               src="/public/svg-images/express-js.png"
               className="express"
-              alt=""
+              alt="express-js"
             />
           </div>
           <div className="home__button-container">
-            <button className="home__button">Download CV</button>
-            <button className="home__button">Project</button>
+      
+          <a href={Resume} target="_blank" rel="noopener noreferrer"  className="home__button" download>Download CV</a>         
+           <Link to="project" smooth={true} duration={500}  className="home__button">Project</Link>
           </div>
         </div>
       </div>
@@ -112,7 +113,7 @@ function Main() {
           <img
             className="about__image"
             src="/public/images/AdemTozlu.png"
-            alt=""
+            alt="Portfolio Picture"
           />
         </div>
       </div></div>
@@ -171,7 +172,7 @@ function Main() {
               <img
                 className="project__image"
                 src="/public/images/hotel1.png"
-                alt=""
+                alt="screenshot of the project"
               />
             </a>
             <h3 className="project__title">Hotel Resort</h3>
@@ -189,7 +190,7 @@ function Main() {
               <img
                 className="project__image"
                 src="/public/images/shop.png"
-                alt=""
+                alt="screenshot of the project"
               />
             </a>
             <h3 className="project__title">Phone Shop</h3>
@@ -208,7 +209,7 @@ function Main() {
               <img
                 className="project__image"
                 src="/public/images/pokemon.png"
-                alt=""
+                alt="screenshot of the project"
               />
             </a>
             <h3 className="project__title">Pokemon Card</h3>
@@ -226,7 +227,7 @@ function Main() {
               <img
                 className="project__image"
                 src="/public/images/crypto.png"
-                alt=""
+                alt="screenshot of the project"
               />
             </a>
 
@@ -253,7 +254,7 @@ function Main() {
           <a href="https://github.com/Adem-Tozlu" target="_blank" rel="noopener noreferrer">
             <FaGithub className="contact__icon" />
           </a>
-          <a href="https://www.linkedin.com/in/adem-tozlu-8906b52a5/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/adem-tozlu" target="_blank" rel="noopener noreferrer">
             <IoLogoLinkedin className="contact__icon" />
           </a>
           <a href="mailto:Adem-Tozlu@hotmail.de"><MdOutlineMail className="contact__icon" /></a>

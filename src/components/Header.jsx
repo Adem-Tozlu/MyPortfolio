@@ -72,7 +72,7 @@ function Header() {
         </li>
     </ul>
    { menuLinks? <div className='header__nav__links'>
-    <a href="https://www.linkedin.com/in/adem-tozlu-8906b52a5/">
+    <a href="https://www.linkedin.com/in/adem-tozlu">
     <IoLogoLinkedin className='header__nav__links--button' />
     </a>
    

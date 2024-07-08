@@ -17,7 +17,8 @@
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.24.0",
     "react-scroll": "^1.9.0",
-    "react-tsparticles": "^2.12.2"
+    "react-tsparticles": "^2.12.2",
+    "scrolls": "^0.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
