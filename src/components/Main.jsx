@@ -62,17 +62,17 @@ function Main() {
 
           <div className="home__skills">
             <img src="/svg-images/html5.svg" alt="htlm" />
-            <img src="/public/svg-images/css.svg" alt="css" />
+            <img src="svg-images/css.svg" alt="css" />
 
-            <img src="./public/svg-images/scss.svg" alt="scss" />
-            <img src="./public/svg-images/bootstrap.svg" alt="bootstrap" />
-            <img src="./public/svg-images/react.svg" alt="react" />
-            <img src="./public/svg-images/javascript.svg" alt="javascript" />
-            <img src="./public/svg-images/nodejs.svg" alt="nodejs" />
-            <img src="./public/svg-images/mongodb.svg" alt="mongodb" />
+            <img src="/svg-images/scss.svg" alt="scss" />
+            <img src="/svg-images/bootstrap.svg" alt="bootstrap" />
+            <img src="/svg-images/react.svg" alt="react" />
+            <img src="/svg-images/javascript.svg" alt="javascript" />
+            <img src="/svg-images/nodejs.svg" alt="nodejs" />
+            <img src="/svg-images/mongodb.svg" alt="mongodb" />
 
             <img
-              src="./public/svg-images/express-js.png"
+              src="/svg-images/express-js.png"
               className="express"
               alt="express-js"
             />
@@ -152,7 +152,7 @@ function Main() {
 
             <img
               className="about__image"
-              src="./public/images/AdemTozlu.png"
+              src="/images/AdemTozlu.png"
               alt="Portfolio Picture"
             />
           </div>
@@ -167,7 +167,7 @@ function Main() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="./public/svg-images/html5.svg" alt="html" />
+            <img src="/svg-images/html5.svg" alt="html" />
             <p className="skills__text">HTML</p>
           </a>
           <a
@@ -175,7 +175,7 @@ function Main() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="./public/svg-images/css.svg" alt="css" />
+            <img src="/svg-images/css.svg" alt="css" />
             <p className="skills__text">CSS</p>
           </a>
 
@@ -184,7 +184,7 @@ function Main() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="./public/svg-images/scss.svg" alt="scss" />
+            <img src="/svg-images/scss.svg" alt="scss" />
             <p className="skills__text">SASS/SCSS</p>
           </a>
           <a
@@ -192,7 +192,7 @@ function Main() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="./public/svg-images/bootstrap.svg" alt="bootstrap" />
+            <img src="/svg-images/bootstrap.svg" alt="bootstrap" />
             <p className="skills__text">Bootstrap</p>
           </a>
           <a
@@ -200,7 +200,7 @@ function Main() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="./public/svg-images/react.svg" alt="react" />
+            <img src="/svg-images/react.svg" alt="react" />
             <p className="skills__text">React</p>
           </a>
           <a
@@ -208,7 +208,7 @@ function Main() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="./public/svg-images/javascript.svg" alt="javascript" />
+            <img src="/svg-images/javascript.svg" alt="javascript" />
             <p className="skills__text">JavaScript</p>
           </a>
           <a
@@ -216,7 +216,7 @@ function Main() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="./public/svg-images/nodejs.svg" alt="nodejs" />
+            <img src="/svg-images/nodejs.svg" alt="nodejs" />
             <p className="skills__text">Node.js</p>
           </a>
           <a
@@ -224,7 +224,7 @@ function Main() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="./public/svg-images/mongodb.svg" alt="mongodb" />
+            <img src="/svg-images/mongodb.svg" alt="mongodb" />
             <p className="skills__text">MongoDB</p>
           </a>
 
@@ -234,7 +234,7 @@ function Main() {
             rel="noopener noreferrer"
           >
             <img
-              src="./public/svg-images/express-js.png"
+              src="/svg-images/express-js.png"
               className="express"
               alt="express-js"
             />
@@ -258,7 +258,7 @@ function Main() {
               >
                 <img
                   className="project__image"
-                  src="./public/images/hotel1.png"
+                  src="/images/hotel1.png"
                   alt="screenshot of the project"
                 />
               </a>
@@ -296,7 +296,7 @@ function Main() {
               >
                 <img
                   className="project__image"
-                  src="./public/images/shop.png"
+                  src="/images/shop.png"
                   alt="screenshot of the project"
                 />
               </a>
@@ -333,7 +333,7 @@ function Main() {
               >
                 <img
                   className="project__image"
-                  src="./public/images/pokemon.png"
+                  src="/images/pokemon.png"
                   alt="screenshot of the project"
                 />
               </a>
@@ -372,7 +372,7 @@ function Main() {
               >
                 <img
                   className="project__image"
-                  src="./public/images/crypto.png"
+                  src="/images/crypto.png"
                   alt="screenshot of the project"
                 />
               </a>
