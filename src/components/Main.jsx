@@ -61,7 +61,7 @@ function Main() {
           </span>
 
           <div className="home__skills">
-            <img src="/public/svg-images/html5.svg" alt="htlm" />
+            <img src="/svg-images/html5.svg" alt="htlm" />
             <img src="/public/svg-images/css.svg" alt="css" />
 
             <img src="./public/svg-images/scss.svg" alt="scss" />
