@@ -27,7 +27,7 @@ This is my portfolio with CV
 ### Links
 
 - Solution URL: [Github Solutions](https://github.com/Adem-Tozlu/MyPortfolio)
-- Live Site URL: [Website Shop](https://project-shop-xi.vercel.app/)
+- Live Site URL: [Portfolio](https://my-portfolio-amber-rho-96.vercel.app/)
 
 ## My process
 
