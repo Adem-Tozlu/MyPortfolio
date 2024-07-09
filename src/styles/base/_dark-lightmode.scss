@@ -1,58 +1,61 @@
 @use "../abstracts/" as *;
 
 :root {
-    --color-blue: #{$color-blue};
-  }
+  --color-blue: #{$color-blue};
+}
 
-  
-  .dark-lightmode{
-    position: absolute;
-    right: 2rem;
-    top: 1.5rem;
-    z-index: 99;
-  
+.dark-lightmode {
+  position: absolute;
+  right: 2rem;
+  top: 1.5rem;
+  z-index: 99;
+  @media (min-width: $breakpoint-md) {
+    position: fixed;
   }
-  
-  .light{
-   
-    color: black;
-    width: 2rem;
-    height: 2rem;
-  }
-  .dark{
-   
-    color:rgb(255, 255, 255);
-    width: 2rem;
-    height: 2rem;
-    
-  }
+}
 
+.light {
+  color: black;
+  width: 2rem;
+  height: 2rem;
+}
+.dark {
+  color: rgb(255, 255, 255);
+  width: 2rem;
+  height: 2rem;
+}
 
-  .theme-light {
+.theme-light {
+  color: $color-white;
+
+  a {
     color: $color-white;
-  
-    a {
-      color: $color-white;
-    }
-    .project__container-1, .project__container-2, .project__container-3, .project__container-4{
-      background-color: white;
-      color: black;
-    }
   }
-  
-  .theme-dark {
-    color: $color-black;
-    .project__container-1, .project__container-2, .project__container-3, .project__container-4 {
-      background-color: rgb(0, 0, 0);
-      color: white;
-    }
-    .home__name_text {
+  .project__container-1,
+  .project__container-2,
+  .project__container-3,
+  .project__container-4 {
+    background-color: white;
+    color: black;
+  }
+}
+
+.theme-dark {
+  color: $color-black;
+  .project__container-1,
+  .project__container-2,
+  .project__container-3,
+  .project__container-4 {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  .home__name_text {
+    text-shadow: 0 0 3px rgba(52, 60, 77, 0.5);
+    &--2 {
       text-shadow: 0 0 3px rgba(52, 60, 77, 0.5);
-      &--2 {
-        text-shadow: 0 0 3px rgba(52, 60, 77, 0.5);
-      }
-    }
-    a {
-      color: $color-black;
     }
   }
+  a {
+    color: $color-black;
+  }
+}

@@ -1,28 +1,26 @@
 @use "variables" as *;
 :root {
-    --color-white: #{$color-white};
+  --color-white: #{$color-white};
+}
+
+@mixin project_container() {
+  background-color: var(--color-white);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+}
+
+@mixin headline() {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--color-blue);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+@mixin skills-images() {
+  cursor: pointer;
+  width: 3rem;
+  height: auto;
+  @media (min-width: $breakpoint-md) {
+    width: 4rem;
   }
-
-
-@mixin project_container(){
-    background-color: var(--color-white);
-    backdrop-filter: blur(10px);
-    border-radius: 1rem;
-}
-
-@mixin headline(){
-    font-size: 3rem;
-    font-weight: 600;
-    color: var(--color-blue);
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
-}
-
-@mixin skills-images (){
-    cursor: pointer;
-    width: 3rem;
-    height: auto;
-    @media (min-width: $breakpoint-md) {
-      
-      width: 4rem;
-    }
 }
