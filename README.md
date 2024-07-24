@@ -19,7 +19,7 @@ This is my portfolio with CV
 
 ### Screenshot
 
-![Screenshot](public/screenshot.png)
+![Screenshot](public/Portfolio-Screenshot.png)
 
 
 
