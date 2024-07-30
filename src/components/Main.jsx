@@ -250,6 +250,7 @@ function Main() {
           <h2>Project</h2>
 
           <div className={`project__container theme-${theme}`}>
+            {/* -------------------Project1------------------- */}
             <section className="project__container-1">
               <a
                 href="https://hotel-resort-project.vercel.app/"
@@ -288,6 +289,9 @@ function Main() {
                 </a>
               </div>
             </section>
+
+            {/* -------------------Project2------------------- */}
+
             <section className="project__container-2 ">
               <a
                 href="https://project-shop-xi.vercel.app/"
@@ -325,6 +329,8 @@ function Main() {
                 </a>
               </div>
             </section>
+
+            {/* -------------------Project3------------------- */}
             <section className="project__container-3">
               <a
                 href="https://pokemon-cards-delta.vercel.app/"
@@ -364,6 +370,8 @@ function Main() {
                 </a>
               </div>
             </section>
+
+            {/* -------------------Project4------------------- */}
             <section className="project__container-4">
               <a
                 href="https://project-crypto-currencyconverter.vercel.app/"
@@ -403,6 +411,47 @@ function Main() {
                 </a>
               </div>
             </section>
+
+            {/* -------------------Project5------------------- */}
+            <section className="project__container-5">
+              <a
+                href="https://project-crypto-currencyconverter.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="project__image"
+                  src="/images/Filmothek.png"
+                  alt="screenshot of the project"
+                />
+              </a>
+              <h3 className="project__title">Filmothek-Website</h3>
+              <div className="project__text-container">
+                <article className="project__text">
+                  This project is a movie library that allows you to watch movie trailers. 
+                  It was developed using React and Tailwind CSS. Since it does not use an API, it is primarily intended as a practice project. 
+                  The project utilizes various hooks such as useState, useContext, and useEffect. It also features a dark mode.
+                </article>
+              </div>{" "}
+              <div className="project__button-container">
+                {" "}
+                <a
+                  href="https://github.com/Adem-Tozlu/Filmothek-Website"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="project__button-icon" />
+                </a>
+                <a
+                  href="https://filmothek-website.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <TbWorld className="project__button-icon" />
+                </a>
+              </div>
+            </section>
+
           </div>
         </div>
       </div>
