@@ -117,9 +117,9 @@ function Main() {
               <h1 className="about__whatido">What I do</h1>
               <article className="about__text">
                 I am a results-oriented full-stack developer with in-depth knowledge of theory and practice.
-                 I am currently gaining valuable practical experience through a practical internship at Learnfiction.
-                  I have demonstrated my ability to solve complex problems and develop innovative solutions in my personal projects.
-                   Read more about this in the “Projects” section. I look forward to contributing my skills and knowledge to your team.
+                I am currently gaining valuable practical experience through a practical internship at Learnfiction.
+                I have demonstrated my ability to solve complex problems and develop innovative solutions in my personal projects.
+                Read more about this in the “Projects” section. I look forward to contributing my skills and knowledge to your team.
               </article>
               <div className="about__fullstack-container">
                 <h3 className="about__fullstack-container-text">
@@ -199,12 +199,30 @@ function Main() {
             <p className="skills__text">React</p>
           </a>
           <a
+            href="https://angular.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/svg-images/angular.png" alt="angular" />
+            <p className="skills__text">Angular</p>
+          </a>
+
+          <a
             href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src="/svg-images/javascript.svg" alt="javascript" />
             <p className="skills__text">JavaScript</p>
+          </a>
+
+          <a
+            href="https://www.typescriptlang.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/svg-images/typescript" alt="typescript" />
+            <p className="skills__text">Typescript</p>
           </a>
           <a
             href="https://nodejs.org/docs/latest/api/"
