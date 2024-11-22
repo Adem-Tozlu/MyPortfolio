@@ -67,9 +67,12 @@ function Main() {
             <img src="/svg-images/scss.svg" alt="scss" />
             <img src="/svg-images/bootstrap.svg" alt="bootstrap" />
             <img src="/svg-images/react.svg" alt="react" />
+            <img src="/svg-images/angular.png" alt="angular" />
             <img src="/svg-images/javascript.svg" alt="javascript" />
+            <img src="/svg-images/typescript.png" alt="typescript" />
             <img src="/svg-images/nodejs.svg" alt="nodejs" />
             <img src="/svg-images/mongodb.svg" alt="mongodb" />
+
 
             <img
               src="/svg-images/express-js.png"
@@ -221,7 +224,7 @@ function Main() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/svg-images/typescript" alt="typescript" />
+            <img src="/svg-images/typescript.png" alt="typescript" />
             <p className="skills__text">Typescript</p>
           </a>
           <a
