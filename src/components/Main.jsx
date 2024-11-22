@@ -116,15 +116,10 @@ function Main() {
             <div>
               <h1 className="about__whatido">What I do</h1>
               <article className="about__text">
-                I am a motivated career changer into full-stack development,
-                currently undergoing further education to develop my skills.
-                Despite lacking formal background, I possess a strong curiosity
-                and passion for technology. My portfolio showcases not only my
-                past projects but also my ability to quickly grasp new concepts
-                and find innovative solutions. You can explore my projects in
-                more detail in the "Projects" section. I am eager to further
-                develop my potential and collaborate with you to realize great
-                projects.
+                I am a results-oriented full-stack developer with in-depth knowledge of theory and practice.
+                 I am currently gaining valuable practical experience through a practical internship at Learnfiction.
+                  I have demonstrated my ability to solve complex problems and develop innovative solutions in my personal projects.
+                   Read more about this in the “Projects” section. I look forward to contributing my skills and knowledge to your team.
               </article>
               <div className="about__fullstack-container">
                 <h3 className="about__fullstack-container-text">
@@ -428,8 +423,8 @@ function Main() {
               <h3 className="project__title">Filmothek-Website</h3>
               <div className="project__text-container">
                 <article className="project__text">
-                  This project is a movie library that allows you to watch movie trailers. 
-                  It was developed using React and Tailwind CSS. Since it does not use an API, it is primarily intended as a practice project. 
+                  This project is a movie library that allows you to watch movie trailers.
+                  It was developed using React and Tailwind CSS. Since it does not use an API, it is primarily intended as a practice project.
                   The project utilizes various hooks such as useState, useContext, and useEffect. It also features a dark mode.
                 </article>
               </div>{" "}
@@ -444,6 +439,45 @@ function Main() {
                 </a>
                 <a
                   href="https://filmothek-website.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <TbWorld className="project__button-icon" />
+                </a>
+              </div>
+            </section>
+            {/* -------------------Project6------------------- */}
+            <section className="project__container-6">
+              <a
+                href="https://dci-fellow.onrender.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="project__image"
+                  src="/images/dci.png"
+                  alt="screenshot of the project"
+                />
+              </a>
+              <h3 className="project__title">DCI Fellow Program </h3>
+              <div className="project__text-container">
+                <article className="project__text">
+                  The DCI Fellow Program is a comprehensive web application designed to manage and facilitate the activities of the Digital Career Institute.
+
+
+                </article>
+              </div>{" "}
+              <div className="project__button-container">
+                {" "}
+                <a
+                  href="https://github.com/DCI-Fellow-Program"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="project__button-icon" />
+                </a>
+                <a
+                  href="https://dci-fellow.onrender.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -59,6 +59,10 @@
       @include project_container();
       height: 100%;
     }
+    &-6 {
+      @include project_container();
+      height: 100%;
+    }
   }
   &__text {
     hyphens: auto;
