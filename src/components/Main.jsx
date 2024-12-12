@@ -491,7 +491,7 @@ function Main() {
               <div className="project__button-container">
                 {" "}
                 <a
-                  href="https://github.com/DCI-Fellow-Program"
+                  href="https://github.com/Adem-Tozlu/DCI_Fellow_Program"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
