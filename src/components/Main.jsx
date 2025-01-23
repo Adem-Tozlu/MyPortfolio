@@ -470,7 +470,7 @@ function Main() {
             {/* -------------------Project6------------------- */}
             <section className="project__container-6">
               <a
-                href="https://dci-fellow.onrender.com/"
+                href="http://fellow.digitalcareerinstitute.org/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
