@@ -498,7 +498,7 @@ function Main() {
                   <FaGithub className="project__button-icon" />
                 </a>
                 <a
-                  href="https://dci-fellow.onrender.com/"
+                  href="http://fellow.digitalcareerinstitute.org/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
